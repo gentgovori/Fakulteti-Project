@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewForPartial</title>
+    @Styles.Render("~/Content/css")
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#myTable').DataTable({
+            "processing": true,
+            responsive: true,
+            "ordering": false,
+            autoFill: true,
+            language: {
+
+                "sEmptyTable": "Nuk ka te dhena",
+                "sInfo": "Duke treguar _START_ deri _END_ prej _TOTAL_ rreshtave.",
+                "sInfoEmpty": "Duke treguar 0 deri 0 prej 0 rreshtave.",
+                "sInfoFiltered": "(të filtruara nga gjithësej _MAX_  reshtave).",
+                "sInfoPostFix": "",
+                "sInfoThousands": ",",
+                "sLengthMenu": "Shiko _MENU_ rreshta",
+                "sLoadingRecords": "Duke u ngarkuar....",
+                "sProcessing": "Duke u perpunuar....",
+                "sSearch": "Kerkoni: ",
+                "sZeroRecords": "Asnjë e dhënë nuk u gjet.",
+                "oPaginate": {
+                    "sFirst": "I pari",
+                    "sLast": "I fundit",
+                    "sNext": "I radhes",
+                    "sPrevious": "Paraprak"
+                },
+                "oAria": {
+                    "sSortAscending": ": Aktivizo për të sortuar kolumnin me vlera në ngritje.",
+                    "sSortDescending": ": Aktivizo për të sortuar kolumnin me vlera në zbritje."
+                }
+            }
+        });
+    });
+</script>
+
+<style type="text/css">
+    a:visited {
+        color: white;
+    }
+</style>

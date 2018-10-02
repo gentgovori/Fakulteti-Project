@@ -1,0 +1,119 @@
+﻿@using Fakulteti.Models.ParaqitjaProvimeveModel
+@model IEnumerable<ListaProvimeve>
+@{
+    ViewBag.Title = "Index";
+}
+<br />
+<br />
+<br />
+<br />
+@if (ViewBag.Check == "1")
+{
+    <p style="font-weight:bold; font-size:18px;color:green">@ViewBag.Mesazhi</p>
+}
+else if (ViewBag.Check == "2")
+{
+    <p style="font-weight:bold; font-size:18px;color:#1532be">@ViewBag.Mesazhi</p>
+}
+else if (ViewBag.Check == "3")
+{
+    <p style="font-weight:bold; font-size:18px;color:red">@ViewBag.Mesazhi</p>
+}
+else
+{
+    <p style="font-weight:bold; font-size:18px;color:green">@ViewBag.Mesazhi</p>
+}
+<br />
+<div style="padding:20px;border:1px solid lightgrey;box-shadow:2px 2px 2px grey">
+    <div class="row">
+        <div class="col-md-2">
+            <button type="button" id="ParaqiteProviminGet" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRegjistrimi" onclick="ParaqiteProvimin()" style="width:100%"><i class="fa fa-plus-circle" style="font-size:1.3em"></i>&nbsp;Paraqite provimin</button>
+        </div>
+        <div class="col-md-10">
+
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="table table-responsive">
+        <table id="myTable" class="table text-center table-hover">
+
+            <thead>
+                <tr>
+                    <th style="text-align:left">
+                        Lenda
+                    </th>
+                    <th style="text-align:left">
+                        Profesori
+                    </th>
+                    <th style="text-align:left">
+                        Afati
+                    </th>
+                    <th style="text-align:left">
+                        Viti
+                    </th>
+                    <th style="text-align:left">
+                        
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+            {
+                    <tr>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Lenda)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Profesori)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Afati)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Viti)
+                        </td>
+                        <td style="text-align:left">
+                            <button type="button" id="ModifikoSallenGet" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalModifikimi" onclick="ModifikoSallen(@item.ParaqitjaProvimeveID)" style="width:100%"><i class="fa fa-plus-circle" style="font-size:1.3em"></i>&nbsp;Fshije</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal fade" id="modalRegjistrimi" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4>
+                        <span style="display:inline-block">
+                            <i class="fa fa-edit fa-2x"></i>
+                            &nbsp; &nbsp;
+
+                        </span>Paraqitja e provimeve
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="moduliRegjistrimi">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default btn-default pull-right btn-sm" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Anulo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    function ParaqiteProvimin()
+    {
+        $("#moduliRegjistrimi").load('@Url.Action("ParaqiteProviminGet")')
+    }
+</script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />

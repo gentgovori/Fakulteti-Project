@@ -1,0 +1,952 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="FakultetiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="tblAfati">
+          <Key>
+            <PropertyRef Name="AfatiID" />
+          </Key>
+          <Property Name="AfatiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Afati" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DataFillimit" Type="datetime" Nullable="false" />
+          <Property Name="DataMbarimit" Type="datetime" Nullable="false" />
+          <Property Name="Aktiv" Type="bit" Nullable="false" />
+          <Property Name="NumriProvimeve" Type="int" />
+        </EntityType>
+        <EntityType Name="tblDepartamenti">
+          <Key>
+            <PropertyRef Name="DepartamentiID" />
+          </Key>
+          <Property Name="DepartamentiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Departamenti" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblKlasa">
+          <Key>
+            <PropertyRef Name="KlasaID" />
+          </Key>
+          <Property Name="KlasaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Numri" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblKomuna">
+          <Key>
+            <PropertyRef Name="KomunaID" />
+          </Key>
+          <Property Name="KomunaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Komua" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Qyteti" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblLenda">
+          <Key>
+            <PropertyRef Name="LendaID" />
+          </Key>
+          <Property Name="LendaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Emri" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Pershkrimi" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblLendaKlasa">
+          <Key>
+            <PropertyRef Name="LendaKlasaID" />
+          </Key>
+          <Property Name="LendaKlasaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LendaID" Type="int" Nullable="false" />
+          <Property Name="KlasaID" Type="int" Nullable="false" />
+          <Property Name="Koha" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblParaqitjaProvimeve">
+          <Key>
+            <PropertyRef Name="ParaqitjaProvimeveID" />
+          </Key>
+          <Property Name="ParaqitjaProvimeveID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PerdoruesiID" Type="int" Nullable="false" />
+          <Property Name="ProfesoriLendaID" Type="int" Nullable="false" />
+          <Property Name="AfatiID" Type="int" Nullable="false" />
+          <Property Name="VitiID" Type="int" Nullable="false" />
+          <Property Name="Nota" Type="int" />
+        </EntityType>
+        <EntityType Name="tblPerdoruesi">
+          <Key>
+            <PropertyRef Name="PerdoruesiID" />
+          </Key>
+          <Property Name="PerdoruesiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoliID" Type="int" Nullable="false" />
+          <Property Name="DepartamentiID" Type="int" Nullable="false" />
+          <Property Name="KomunaID" Type="int" Nullable="false" />
+          <Property Name="Emri" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Mbiemri" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Datelindja" Type="datetime" Nullable="false" />
+          <Property Name="DataRegjistrimit" Type="datetime" Nullable="false" />
+          <Property Name="Telefoni" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Perdoruesi" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Fjalekalimi" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Salt" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Aktiv" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblProfesori">
+          <Key>
+            <PropertyRef Name="ProfesoriID" />
+          </Key>
+          <Property Name="ProfesoriID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Emri" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Mbiemri" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Titulli" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblProfesoriLenda">
+          <Key>
+            <PropertyRef Name="ProfesoriLendaID" />
+          </Key>
+          <Property Name="ProfesoriLendaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProfesoriID" Type="int" Nullable="false" />
+          <Property Name="LendaID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblRoli">
+          <Key>
+            <PropertyRef Name="RoliID" />
+          </Key>
+          <Property Name="RoliID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoliPershkrimi" Type="varchar" MaxLength="20" />
+          <Property Name="Aktiv" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblStudenti">
+          <Key>
+            <PropertyRef Name="StudentiID" />
+          </Key>
+          <Property Name="StudentiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Emri" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Mbiemri" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Datelindja" Type="datetime" Nullable="false" />
+          <Property Name="VitiStudimeve" Type="int" Nullable="false" />
+          <Property Name="KomunaID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblStudentiLenda">
+          <Key>
+            <PropertyRef Name="StudentiLendaID" />
+          </Key>
+          <Property Name="StudentiLendaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentiID" Type="int" Nullable="false" />
+          <Property Name="ProfesoriLendaID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblViti">
+          <Key>
+            <PropertyRef Name="VitiID" />
+          </Key>
+          <Property Name="VitiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Viti" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_tblLendaKlasa_tblKlasa">
+          <End Role="tblKlasa" Type="Self.tblKlasa" Multiplicity="1" />
+          <End Role="tblLendaKlasa" Type="Self.tblLendaKlasa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblKlasa">
+              <PropertyRef Name="KlasaID" />
+            </Principal>
+            <Dependent Role="tblLendaKlasa">
+              <PropertyRef Name="KlasaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblLendaKlasa_tblLenda">
+          <End Role="tblLenda" Type="Self.tblLenda" Multiplicity="1" />
+          <End Role="tblLendaKlasa" Type="Self.tblLendaKlasa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblLenda">
+              <PropertyRef Name="LendaID" />
+            </Principal>
+            <Dependent Role="tblLendaKlasa">
+              <PropertyRef Name="LendaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblParaqitjaProvimeve_tblAfati">
+          <End Role="tblAfati" Type="Self.tblAfati" Multiplicity="1" />
+          <End Role="tblParaqitjaProvimeve" Type="Self.tblParaqitjaProvimeve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblAfati">
+              <PropertyRef Name="AfatiID" />
+            </Principal>
+            <Dependent Role="tblParaqitjaProvimeve">
+              <PropertyRef Name="AfatiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblParaqitjaProvimeve_tblPerdoruesi">
+          <End Role="tblPerdoruesi" Type="Self.tblPerdoruesi" Multiplicity="1" />
+          <End Role="tblParaqitjaProvimeve" Type="Self.tblParaqitjaProvimeve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblPerdoruesi">
+              <PropertyRef Name="PerdoruesiID" />
+            </Principal>
+            <Dependent Role="tblParaqitjaProvimeve">
+              <PropertyRef Name="PerdoruesiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblParaqitjaProvimeve_tblProfesoriLenda">
+          <End Role="tblProfesoriLenda" Type="Self.tblProfesoriLenda" Multiplicity="1" />
+          <End Role="tblParaqitjaProvimeve" Type="Self.tblParaqitjaProvimeve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblProfesoriLenda">
+              <PropertyRef Name="ProfesoriLendaID" />
+            </Principal>
+            <Dependent Role="tblParaqitjaProvimeve">
+              <PropertyRef Name="ProfesoriLendaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblParaqitjaProvimeve_tblViti">
+          <End Role="tblViti" Type="Self.tblViti" Multiplicity="1" />
+          <End Role="tblParaqitjaProvimeve" Type="Self.tblParaqitjaProvimeve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblViti">
+              <PropertyRef Name="VitiID" />
+            </Principal>
+            <Dependent Role="tblParaqitjaProvimeve">
+              <PropertyRef Name="VitiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPerdoruesi_tblDepartamenti">
+          <End Role="tblDepartamenti" Type="Self.tblDepartamenti" Multiplicity="1" />
+          <End Role="tblPerdoruesi" Type="Self.tblPerdoruesi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblDepartamenti">
+              <PropertyRef Name="DepartamentiID" />
+            </Principal>
+            <Dependent Role="tblPerdoruesi">
+              <PropertyRef Name="DepartamentiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPerdoruesi_tblKomuna">
+          <End Role="tblKomuna" Type="Self.tblKomuna" Multiplicity="1" />
+          <End Role="tblPerdoruesi" Type="Self.tblPerdoruesi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblKomuna">
+              <PropertyRef Name="KomunaID" />
+            </Principal>
+            <Dependent Role="tblPerdoruesi">
+              <PropertyRef Name="KomunaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPerdoruesi_tblRoli">
+          <End Role="tblRoli" Type="Self.tblRoli" Multiplicity="1" />
+          <End Role="tblPerdoruesi" Type="Self.tblPerdoruesi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRoli">
+              <PropertyRef Name="RoliID" />
+            </Principal>
+            <Dependent Role="tblPerdoruesi">
+              <PropertyRef Name="RoliID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblProfesoriLenda_tblLenda">
+          <End Role="tblLenda" Type="Self.tblLenda" Multiplicity="1" />
+          <End Role="tblProfesoriLenda" Type="Self.tblProfesoriLenda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblLenda">
+              <PropertyRef Name="LendaID" />
+            </Principal>
+            <Dependent Role="tblProfesoriLenda">
+              <PropertyRef Name="LendaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblProfesoriLenda_tblPerdoruesi">
+          <End Role="tblPerdoruesi" Type="Self.tblPerdoruesi" Multiplicity="1" />
+          <End Role="tblProfesoriLenda" Type="Self.tblProfesoriLenda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblPerdoruesi">
+              <PropertyRef Name="PerdoruesiID" />
+            </Principal>
+            <Dependent Role="tblProfesoriLenda">
+              <PropertyRef Name="ProfesoriID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStudentiLenda_tblPerdoruesi">
+          <End Role="tblPerdoruesi" Type="Self.tblPerdoruesi" Multiplicity="1" />
+          <End Role="tblStudentiLenda" Type="Self.tblStudentiLenda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblPerdoruesi">
+              <PropertyRef Name="PerdoruesiID" />
+            </Principal>
+            <Dependent Role="tblStudentiLenda">
+              <PropertyRef Name="StudentiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStudentiLenda_tblProfesoriLenda">
+          <End Role="tblProfesoriLenda" Type="Self.tblProfesoriLenda" Multiplicity="1" />
+          <End Role="tblStudentiLenda" Type="Self.tblStudentiLenda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblProfesoriLenda">
+              <PropertyRef Name="ProfesoriLendaID" />
+            </Principal>
+            <Dependent Role="tblStudentiLenda">
+              <PropertyRef Name="ProfesoriLendaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FakultetiModelStoreContainer">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblAfati" EntityType="Self.tblAfati" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblDepartamenti" EntityType="Self.tblDepartamenti" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblKlasa" EntityType="Self.tblKlasa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblKomuna" EntityType="Self.tblKomuna" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblLenda" EntityType="Self.tblLenda" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblLendaKlasa" EntityType="Self.tblLendaKlasa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblParaqitjaProvimeve" EntityType="Self.tblParaqitjaProvimeve" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblPerdoruesi" EntityType="Self.tblPerdoruesi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblProfesori" EntityType="Self.tblProfesori" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblProfesoriLenda" EntityType="Self.tblProfesoriLenda" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblRoli" EntityType="Self.tblRoli" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblStudenti" EntityType="Self.tblStudenti" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblStudentiLenda" EntityType="Self.tblStudentiLenda" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblViti" EntityType="Self.tblViti" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tblLendaKlasa_tblKlasa" Association="Self.FK_tblLendaKlasa_tblKlasa">
+            <End Role="tblKlasa" EntitySet="tblKlasa" />
+            <End Role="tblLendaKlasa" EntitySet="tblLendaKlasa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblLendaKlasa_tblLenda" Association="Self.FK_tblLendaKlasa_tblLenda">
+            <End Role="tblLenda" EntitySet="tblLenda" />
+            <End Role="tblLendaKlasa" EntitySet="tblLendaKlasa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblParaqitjaProvimeve_tblAfati" Association="Self.FK_tblParaqitjaProvimeve_tblAfati">
+            <End Role="tblAfati" EntitySet="tblAfati" />
+            <End Role="tblParaqitjaProvimeve" EntitySet="tblParaqitjaProvimeve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblParaqitjaProvimeve_tblPerdoruesi" Association="Self.FK_tblParaqitjaProvimeve_tblPerdoruesi">
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+            <End Role="tblParaqitjaProvimeve" EntitySet="tblParaqitjaProvimeve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblParaqitjaProvimeve_tblProfesoriLenda" Association="Self.FK_tblParaqitjaProvimeve_tblProfesoriLenda">
+            <End Role="tblProfesoriLenda" EntitySet="tblProfesoriLenda" />
+            <End Role="tblParaqitjaProvimeve" EntitySet="tblParaqitjaProvimeve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblParaqitjaProvimeve_tblViti" Association="Self.FK_tblParaqitjaProvimeve_tblViti">
+            <End Role="tblViti" EntitySet="tblViti" />
+            <End Role="tblParaqitjaProvimeve" EntitySet="tblParaqitjaProvimeve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPerdoruesi_tblDepartamenti" Association="Self.FK_tblPerdoruesi_tblDepartamenti">
+            <End Role="tblDepartamenti" EntitySet="tblDepartamenti" />
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPerdoruesi_tblKomuna" Association="Self.FK_tblPerdoruesi_tblKomuna">
+            <End Role="tblKomuna" EntitySet="tblKomuna" />
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPerdoruesi_tblRoli" Association="Self.FK_tblPerdoruesi_tblRoli">
+            <End Role="tblRoli" EntitySet="tblRoli" />
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblProfesoriLenda_tblLenda" Association="Self.FK_tblProfesoriLenda_tblLenda">
+            <End Role="tblLenda" EntitySet="tblLenda" />
+            <End Role="tblProfesoriLenda" EntitySet="tblProfesoriLenda" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblProfesoriLenda_tblPerdoruesi" Association="Self.FK_tblProfesoriLenda_tblPerdoruesi">
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+            <End Role="tblProfesoriLenda" EntitySet="tblProfesoriLenda" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStudentiLenda_tblPerdoruesi" Association="Self.FK_tblStudentiLenda_tblPerdoruesi">
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+            <End Role="tblStudentiLenda" EntitySet="tblStudentiLenda" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStudentiLenda_tblProfesoriLenda" Association="Self.FK_tblStudentiLenda_tblProfesoriLenda">
+            <End Role="tblProfesoriLenda" EntitySet="tblProfesoriLenda" />
+            <End Role="tblStudentiLenda" EntitySet="tblStudentiLenda" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FakultetiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="FakultetiEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sysdiagrams" EntityType="FakultetiModel.sysdiagrams" />
+          <EntitySet Name="tblAfati" EntityType="FakultetiModel.tblAfati" />
+          <EntitySet Name="tblDepartamenti" EntityType="FakultetiModel.tblDepartamenti" />
+          <EntitySet Name="tblKlasa" EntityType="FakultetiModel.tblKlasa" />
+          <EntitySet Name="tblKomuna" EntityType="FakultetiModel.tblKomuna" />
+          <EntitySet Name="tblLenda" EntityType="FakultetiModel.tblLenda" />
+          <EntitySet Name="tblLendaKlasa" EntityType="FakultetiModel.tblLendaKlasa" />
+          <EntitySet Name="tblParaqitjaProvimeve" EntityType="FakultetiModel.tblParaqitjaProvimeve" />
+          <EntitySet Name="tblPerdoruesi" EntityType="FakultetiModel.tblPerdoruesi" />
+          <EntitySet Name="tblProfesori" EntityType="FakultetiModel.tblProfesori" />
+          <EntitySet Name="tblProfesoriLenda" EntityType="FakultetiModel.tblProfesoriLenda" />
+          <EntitySet Name="tblRoli" EntityType="FakultetiModel.tblRoli" />
+          <EntitySet Name="tblStudenti" EntityType="FakultetiModel.tblStudenti" />
+          <EntitySet Name="tblStudentiLenda" EntityType="FakultetiModel.tblStudentiLenda" />
+          <EntitySet Name="tblViti" EntityType="FakultetiModel.tblViti" />
+          <AssociationSet Name="FK_tblParaqitjaProvimeve_tblAfati" Association="FakultetiModel.FK_tblParaqitjaProvimeve_tblAfati">
+            <End Role="tblAfati" EntitySet="tblAfati" />
+            <End Role="tblParaqitjaProvimeve" EntitySet="tblParaqitjaProvimeve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPerdoruesi_tblDepartamenti" Association="FakultetiModel.FK_tblPerdoruesi_tblDepartamenti">
+            <End Role="tblDepartamenti" EntitySet="tblDepartamenti" />
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblLendaKlasa_tblKlasa" Association="FakultetiModel.FK_tblLendaKlasa_tblKlasa">
+            <End Role="tblKlasa" EntitySet="tblKlasa" />
+            <End Role="tblLendaKlasa" EntitySet="tblLendaKlasa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPerdoruesi_tblKomuna" Association="FakultetiModel.FK_tblPerdoruesi_tblKomuna">
+            <End Role="tblKomuna" EntitySet="tblKomuna" />
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblLendaKlasa_tblLenda" Association="FakultetiModel.FK_tblLendaKlasa_tblLenda">
+            <End Role="tblLenda" EntitySet="tblLenda" />
+            <End Role="tblLendaKlasa" EntitySet="tblLendaKlasa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblProfesoriLenda_tblLenda" Association="FakultetiModel.FK_tblProfesoriLenda_tblLenda">
+            <End Role="tblLenda" EntitySet="tblLenda" />
+            <End Role="tblProfesoriLenda" EntitySet="tblProfesoriLenda" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblParaqitjaProvimeve_tblPerdoruesi" Association="FakultetiModel.FK_tblParaqitjaProvimeve_tblPerdoruesi">
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+            <End Role="tblParaqitjaProvimeve" EntitySet="tblParaqitjaProvimeve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblParaqitjaProvimeve_tblProfesoriLenda" Association="FakultetiModel.FK_tblParaqitjaProvimeve_tblProfesoriLenda">
+            <End Role="tblProfesoriLenda" EntitySet="tblProfesoriLenda" />
+            <End Role="tblParaqitjaProvimeve" EntitySet="tblParaqitjaProvimeve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblParaqitjaProvimeve_tblViti" Association="FakultetiModel.FK_tblParaqitjaProvimeve_tblViti">
+            <End Role="tblViti" EntitySet="tblViti" />
+            <End Role="tblParaqitjaProvimeve" EntitySet="tblParaqitjaProvimeve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblPerdoruesi_tblRoli" Association="FakultetiModel.FK_tblPerdoruesi_tblRoli">
+            <End Role="tblRoli" EntitySet="tblRoli" />
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblProfesoriLenda_tblPerdoruesi" Association="FakultetiModel.FK_tblProfesoriLenda_tblPerdoruesi">
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+            <End Role="tblProfesoriLenda" EntitySet="tblProfesoriLenda" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStudentiLenda_tblPerdoruesi" Association="FakultetiModel.FK_tblStudentiLenda_tblPerdoruesi">
+            <End Role="tblPerdoruesi" EntitySet="tblPerdoruesi" />
+            <End Role="tblStudentiLenda" EntitySet="tblStudentiLenda" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStudentiLenda_tblProfesoriLenda" Association="FakultetiModel.FK_tblStudentiLenda_tblProfesoriLenda">
+            <End Role="tblProfesoriLenda" EntitySet="tblProfesoriLenda" />
+            <End Role="tblStudentiLenda" EntitySet="tblStudentiLenda" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tblAfati">
+          <Key>
+            <PropertyRef Name="AfatiID" />
+          </Key>
+          <Property Name="AfatiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Afati" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DataFillimit" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DataMbarimit" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Aktiv" Type="Boolean" Nullable="false" />
+          <Property Name="NumriProvimeve" Type="Int32" />
+          <NavigationProperty Name="tblParaqitjaProvimeve" Relationship="FakultetiModel.FK_tblParaqitjaProvimeve_tblAfati" FromRole="tblAfati" ToRole="tblParaqitjaProvimeve" />
+        </EntityType>
+        <EntityType Name="tblDepartamenti">
+          <Key>
+            <PropertyRef Name="DepartamentiID" />
+          </Key>
+          <Property Name="DepartamentiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Departamenti" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblPerdoruesi" Relationship="FakultetiModel.FK_tblPerdoruesi_tblDepartamenti" FromRole="tblDepartamenti" ToRole="tblPerdoruesi" />
+        </EntityType>
+        <EntityType Name="tblKlasa">
+          <Key>
+            <PropertyRef Name="KlasaID" />
+          </Key>
+          <Property Name="KlasaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Numri" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblLendaKlasa" Relationship="FakultetiModel.FK_tblLendaKlasa_tblKlasa" FromRole="tblKlasa" ToRole="tblLendaKlasa" />
+        </EntityType>
+        <EntityType Name="tblKomuna">
+          <Key>
+            <PropertyRef Name="KomunaID" />
+          </Key>
+          <Property Name="KomunaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Komua" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Qyteti" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblPerdoruesi" Relationship="FakultetiModel.FK_tblPerdoruesi_tblKomuna" FromRole="tblKomuna" ToRole="tblPerdoruesi" />
+        </EntityType>
+        <EntityType Name="tblLenda">
+          <Key>
+            <PropertyRef Name="LendaID" />
+          </Key>
+          <Property Name="LendaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Emri" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Pershkrimi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblLendaKlasa" Relationship="FakultetiModel.FK_tblLendaKlasa_tblLenda" FromRole="tblLenda" ToRole="tblLendaKlasa" />
+          <NavigationProperty Name="tblProfesoriLenda" Relationship="FakultetiModel.FK_tblProfesoriLenda_tblLenda" FromRole="tblLenda" ToRole="tblProfesoriLenda" />
+        </EntityType>
+        <EntityType Name="tblLendaKlasa">
+          <Key>
+            <PropertyRef Name="LendaKlasaID" />
+          </Key>
+          <Property Name="LendaKlasaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LendaID" Type="Int32" Nullable="false" />
+          <Property Name="KlasaID" Type="Int32" Nullable="false" />
+          <Property Name="Koha" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tblKlasa" Relationship="FakultetiModel.FK_tblLendaKlasa_tblKlasa" FromRole="tblLendaKlasa" ToRole="tblKlasa" />
+          <NavigationProperty Name="tblLenda" Relationship="FakultetiModel.FK_tblLendaKlasa_tblLenda" FromRole="tblLendaKlasa" ToRole="tblLenda" />
+        </EntityType>
+        <EntityType Name="tblParaqitjaProvimeve">
+          <Key>
+            <PropertyRef Name="ParaqitjaProvimeveID" />
+          </Key>
+          <Property Name="ParaqitjaProvimeveID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PerdoruesiID" Type="Int32" Nullable="false" />
+          <Property Name="ProfesoriLendaID" Type="Int32" Nullable="false" />
+          <Property Name="AfatiID" Type="Int32" Nullable="false" />
+          <Property Name="VitiID" Type="Int32" Nullable="false" />
+          <Property Name="Nota" Type="Int32" />
+          <NavigationProperty Name="tblAfati" Relationship="FakultetiModel.FK_tblParaqitjaProvimeve_tblAfati" FromRole="tblParaqitjaProvimeve" ToRole="tblAfati" />
+          <NavigationProperty Name="tblPerdoruesi" Relationship="FakultetiModel.FK_tblParaqitjaProvimeve_tblPerdoruesi" FromRole="tblParaqitjaProvimeve" ToRole="tblPerdoruesi" />
+          <NavigationProperty Name="tblProfesoriLenda" Relationship="FakultetiModel.FK_tblParaqitjaProvimeve_tblProfesoriLenda" FromRole="tblParaqitjaProvimeve" ToRole="tblProfesoriLenda" />
+          <NavigationProperty Name="tblViti" Relationship="FakultetiModel.FK_tblParaqitjaProvimeve_tblViti" FromRole="tblParaqitjaProvimeve" ToRole="tblViti" />
+        </EntityType>
+        <EntityType Name="tblPerdoruesi">
+          <Key>
+            <PropertyRef Name="PerdoruesiID" />
+          </Key>
+          <Property Name="PerdoruesiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoliID" Type="Int32" Nullable="false" />
+          <Property Name="DepartamentiID" Type="Int32" Nullable="false" />
+          <Property Name="KomunaID" Type="Int32" Nullable="false" />
+          <Property Name="Emri" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Mbiemri" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Datelindja" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DataRegjistrimit" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Telefoni" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Perdoruesi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fjalekalimi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Salt" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Aktiv" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="tblDepartamenti" Relationship="FakultetiModel.FK_tblPerdoruesi_tblDepartamenti" FromRole="tblPerdoruesi" ToRole="tblDepartamenti" />
+          <NavigationProperty Name="tblKomuna" Relationship="FakultetiModel.FK_tblPerdoruesi_tblKomuna" FromRole="tblPerdoruesi" ToRole="tblKomuna" />
+          <NavigationProperty Name="tblParaqitjaProvimeve" Relationship="FakultetiModel.FK_tblParaqitjaProvimeve_tblPerdoruesi" FromRole="tblPerdoruesi" ToRole="tblParaqitjaProvimeve" />
+          <NavigationProperty Name="tblRoli" Relationship="FakultetiModel.FK_tblPerdoruesi_tblRoli" FromRole="tblPerdoruesi" ToRole="tblRoli" />
+          <NavigationProperty Name="tblProfesoriLenda" Relationship="FakultetiModel.FK_tblProfesoriLenda_tblPerdoruesi" FromRole="tblPerdoruesi" ToRole="tblProfesoriLenda" />
+          <NavigationProperty Name="tblStudentiLenda" Relationship="FakultetiModel.FK_tblStudentiLenda_tblPerdoruesi" FromRole="tblPerdoruesi" ToRole="tblStudentiLenda" />
+        </EntityType>
+        <EntityType Name="tblProfesori">
+          <Key>
+            <PropertyRef Name="ProfesoriID" />
+          </Key>
+          <Property Name="ProfesoriID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Emri" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Mbiemri" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Titulli" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblProfesoriLenda">
+          <Key>
+            <PropertyRef Name="ProfesoriLendaID" />
+          </Key>
+          <Property Name="ProfesoriLendaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProfesoriID" Type="Int32" Nullable="false" />
+          <Property Name="LendaID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblLenda" Relationship="FakultetiModel.FK_tblProfesoriLenda_tblLenda" FromRole="tblProfesoriLenda" ToRole="tblLenda" />
+          <NavigationProperty Name="tblParaqitjaProvimeve" Relationship="FakultetiModel.FK_tblParaqitjaProvimeve_tblProfesoriLenda" FromRole="tblProfesoriLenda" ToRole="tblParaqitjaProvimeve" />
+          <NavigationProperty Name="tblPerdoruesi" Relationship="FakultetiModel.FK_tblProfesoriLenda_tblPerdoruesi" FromRole="tblProfesoriLenda" ToRole="tblPerdoruesi" />
+          <NavigationProperty Name="tblStudentiLenda" Relationship="FakultetiModel.FK_tblStudentiLenda_tblProfesoriLenda" FromRole="tblProfesoriLenda" ToRole="tblStudentiLenda" />
+        </EntityType>
+        <EntityType Name="tblRoli">
+          <Key>
+            <PropertyRef Name="RoliID" />
+          </Key>
+          <Property Name="RoliID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoliPershkrimi" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Aktiv" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="tblPerdoruesi" Relationship="FakultetiModel.FK_tblPerdoruesi_tblRoli" FromRole="tblRoli" ToRole="tblPerdoruesi" />
+        </EntityType>
+        <EntityType Name="tblStudenti">
+          <Key>
+            <PropertyRef Name="StudentiID" />
+          </Key>
+          <Property Name="StudentiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Emri" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Mbiemri" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Datelindja" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="VitiStudimeve" Type="Int32" Nullable="false" />
+          <Property Name="KomunaID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblStudentiLenda">
+          <Key>
+            <PropertyRef Name="StudentiLendaID" />
+          </Key>
+          <Property Name="StudentiLendaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentiID" Type="Int32" Nullable="false" />
+          <Property Name="ProfesoriLendaID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblPerdoruesi" Relationship="FakultetiModel.FK_tblStudentiLenda_tblPerdoruesi" FromRole="tblStudentiLenda" ToRole="tblPerdoruesi" />
+          <NavigationProperty Name="tblProfesoriLenda" Relationship="FakultetiModel.FK_tblStudentiLenda_tblProfesoriLenda" FromRole="tblStudentiLenda" ToRole="tblProfesoriLenda" />
+        </EntityType>
+        <EntityType Name="tblViti">
+          <Key>
+            <PropertyRef Name="VitiID" />
+          </Key>
+          <Property Name="VitiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Viti" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblParaqitjaProvimeve" Relationship="FakultetiModel.FK_tblParaqitjaProvimeve_tblViti" FromRole="tblViti" ToRole="tblParaqitjaProvimeve" />
+        </EntityType>
+        <Association Name="FK_tblParaqitjaProvimeve_tblAfati">
+          <End Type="FakultetiModel.tblAfati" Role="tblAfati" Multiplicity="1" />
+          <End Type="FakultetiModel.tblParaqitjaProvimeve" Role="tblParaqitjaProvimeve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblAfati">
+              <PropertyRef Name="AfatiID" />
+            </Principal>
+            <Dependent Role="tblParaqitjaProvimeve">
+              <PropertyRef Name="AfatiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPerdoruesi_tblDepartamenti">
+          <End Type="FakultetiModel.tblDepartamenti" Role="tblDepartamenti" Multiplicity="1" />
+          <End Type="FakultetiModel.tblPerdoruesi" Role="tblPerdoruesi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblDepartamenti">
+              <PropertyRef Name="DepartamentiID" />
+            </Principal>
+            <Dependent Role="tblPerdoruesi">
+              <PropertyRef Name="DepartamentiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblLendaKlasa_tblKlasa">
+          <End Type="FakultetiModel.tblKlasa" Role="tblKlasa" Multiplicity="1" />
+          <End Type="FakultetiModel.tblLendaKlasa" Role="tblLendaKlasa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblKlasa">
+              <PropertyRef Name="KlasaID" />
+            </Principal>
+            <Dependent Role="tblLendaKlasa">
+              <PropertyRef Name="KlasaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPerdoruesi_tblKomuna">
+          <End Type="FakultetiModel.tblKomuna" Role="tblKomuna" Multiplicity="1" />
+          <End Type="FakultetiModel.tblPerdoruesi" Role="tblPerdoruesi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblKomuna">
+              <PropertyRef Name="KomunaID" />
+            </Principal>
+            <Dependent Role="tblPerdoruesi">
+              <PropertyRef Name="KomunaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblLendaKlasa_tblLenda">
+          <End Type="FakultetiModel.tblLenda" Role="tblLenda" Multiplicity="1" />
+          <End Type="FakultetiModel.tblLendaKlasa" Role="tblLendaKlasa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblLenda">
+              <PropertyRef Name="LendaID" />
+            </Principal>
+            <Dependent Role="tblLendaKlasa">
+              <PropertyRef Name="LendaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblProfesoriLenda_tblLenda">
+          <End Type="FakultetiModel.tblLenda" Role="tblLenda" Multiplicity="1" />
+          <End Type="FakultetiModel.tblProfesoriLenda" Role="tblProfesoriLenda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblLenda">
+              <PropertyRef Name="LendaID" />
+            </Principal>
+            <Dependent Role="tblProfesoriLenda">
+              <PropertyRef Name="LendaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblParaqitjaProvimeve_tblPerdoruesi">
+          <End Type="FakultetiModel.tblPerdoruesi" Role="tblPerdoruesi" Multiplicity="1" />
+          <End Type="FakultetiModel.tblParaqitjaProvimeve" Role="tblParaqitjaProvimeve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblPerdoruesi">
+              <PropertyRef Name="PerdoruesiID" />
+            </Principal>
+            <Dependent Role="tblParaqitjaProvimeve">
+              <PropertyRef Name="PerdoruesiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblParaqitjaProvimeve_tblProfesoriLenda">
+          <End Type="FakultetiModel.tblProfesoriLenda" Role="tblProfesoriLenda" Multiplicity="1" />
+          <End Type="FakultetiModel.tblParaqitjaProvimeve" Role="tblParaqitjaProvimeve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblProfesoriLenda">
+              <PropertyRef Name="ProfesoriLendaID" />
+            </Principal>
+            <Dependent Role="tblParaqitjaProvimeve">
+              <PropertyRef Name="ProfesoriLendaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblParaqitjaProvimeve_tblViti">
+          <End Type="FakultetiModel.tblViti" Role="tblViti" Multiplicity="1" />
+          <End Type="FakultetiModel.tblParaqitjaProvimeve" Role="tblParaqitjaProvimeve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblViti">
+              <PropertyRef Name="VitiID" />
+            </Principal>
+            <Dependent Role="tblParaqitjaProvimeve">
+              <PropertyRef Name="VitiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblPerdoruesi_tblRoli">
+          <End Type="FakultetiModel.tblRoli" Role="tblRoli" Multiplicity="1" />
+          <End Type="FakultetiModel.tblPerdoruesi" Role="tblPerdoruesi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRoli">
+              <PropertyRef Name="RoliID" />
+            </Principal>
+            <Dependent Role="tblPerdoruesi">
+              <PropertyRef Name="RoliID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblProfesoriLenda_tblPerdoruesi">
+          <End Type="FakultetiModel.tblPerdoruesi" Role="tblPerdoruesi" Multiplicity="1" />
+          <End Type="FakultetiModel.tblProfesoriLenda" Role="tblProfesoriLenda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblPerdoruesi">
+              <PropertyRef Name="PerdoruesiID" />
+            </Principal>
+            <Dependent Role="tblProfesoriLenda">
+              <PropertyRef Name="ProfesoriID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStudentiLenda_tblPerdoruesi">
+          <End Type="FakultetiModel.tblPerdoruesi" Role="tblPerdoruesi" Multiplicity="1" />
+          <End Type="FakultetiModel.tblStudentiLenda" Role="tblStudentiLenda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblPerdoruesi">
+              <PropertyRef Name="PerdoruesiID" />
+            </Principal>
+            <Dependent Role="tblStudentiLenda">
+              <PropertyRef Name="StudentiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStudentiLenda_tblProfesoriLenda">
+          <End Type="FakultetiModel.tblProfesoriLenda" Role="tblProfesoriLenda" Multiplicity="1" />
+          <End Type="FakultetiModel.tblStudentiLenda" Role="tblStudentiLenda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblProfesoriLenda">
+              <PropertyRef Name="ProfesoriLendaID" />
+            </Principal>
+            <Dependent Role="tblStudentiLenda">
+              <PropertyRef Name="ProfesoriLendaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FakultetiModelStoreContainer" CdmEntityContainer="FakultetiEntities1">
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="FakultetiModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblAfati">
+            <EntityTypeMapping TypeName="FakultetiModel.tblAfati">
+              <MappingFragment StoreEntitySet="tblAfati">
+                <ScalarProperty Name="NumriProvimeve" ColumnName="NumriProvimeve" />
+                <ScalarProperty Name="Aktiv" ColumnName="Aktiv" />
+                <ScalarProperty Name="DataMbarimit" ColumnName="DataMbarimit" />
+                <ScalarProperty Name="DataFillimit" ColumnName="DataFillimit" />
+                <ScalarProperty Name="Afati" ColumnName="Afati" />
+                <ScalarProperty Name="AfatiID" ColumnName="AfatiID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblDepartamenti">
+            <EntityTypeMapping TypeName="FakultetiModel.tblDepartamenti">
+              <MappingFragment StoreEntitySet="tblDepartamenti">
+                <ScalarProperty Name="Departamenti" ColumnName="Departamenti" />
+                <ScalarProperty Name="DepartamentiID" ColumnName="DepartamentiID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblKlasa">
+            <EntityTypeMapping TypeName="FakultetiModel.tblKlasa">
+              <MappingFragment StoreEntitySet="tblKlasa">
+                <ScalarProperty Name="Numri" ColumnName="Numri" />
+                <ScalarProperty Name="KlasaID" ColumnName="KlasaID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblKomuna">
+            <EntityTypeMapping TypeName="FakultetiModel.tblKomuna">
+              <MappingFragment StoreEntitySet="tblKomuna">
+                <ScalarProperty Name="Qyteti" ColumnName="Qyteti" />
+                <ScalarProperty Name="Komua" ColumnName="Komua" />
+                <ScalarProperty Name="KomunaID" ColumnName="KomunaID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblLenda">
+            <EntityTypeMapping TypeName="FakultetiModel.tblLenda">
+              <MappingFragment StoreEntitySet="tblLenda">
+                <ScalarProperty Name="Pershkrimi" ColumnName="Pershkrimi" />
+                <ScalarProperty Name="Emri" ColumnName="Emri" />
+                <ScalarProperty Name="LendaID" ColumnName="LendaID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblLendaKlasa">
+            <EntityTypeMapping TypeName="FakultetiModel.tblLendaKlasa">
+              <MappingFragment StoreEntitySet="tblLendaKlasa">
+                <ScalarProperty Name="Koha" ColumnName="Koha" />
+                <ScalarProperty Name="KlasaID" ColumnName="KlasaID" />
+                <ScalarProperty Name="LendaID" ColumnName="LendaID" />
+                <ScalarProperty Name="LendaKlasaID" ColumnName="LendaKlasaID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblParaqitjaProvimeve">
+            <EntityTypeMapping TypeName="FakultetiModel.tblParaqitjaProvimeve">
+              <MappingFragment StoreEntitySet="tblParaqitjaProvimeve">
+                <ScalarProperty Name="Nota" ColumnName="Nota" />
+                <ScalarProperty Name="VitiID" ColumnName="VitiID" />
+                <ScalarProperty Name="AfatiID" ColumnName="AfatiID" />
+                <ScalarProperty Name="ProfesoriLendaID" ColumnName="ProfesoriLendaID" />
+                <ScalarProperty Name="PerdoruesiID" ColumnName="PerdoruesiID" />
+                <ScalarProperty Name="ParaqitjaProvimeveID" ColumnName="ParaqitjaProvimeveID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblPerdoruesi">
+            <EntityTypeMapping TypeName="FakultetiModel.tblPerdoruesi">
+              <MappingFragment StoreEntitySet="tblPerdoruesi">
+                <ScalarProperty Name="Aktiv" ColumnName="Aktiv" />
+                <ScalarProperty Name="Salt" ColumnName="Salt" />
+                <ScalarProperty Name="Fjalekalimi" ColumnName="Fjalekalimi" />
+                <ScalarProperty Name="Perdoruesi" ColumnName="Perdoruesi" />
+                <ScalarProperty Name="Telefoni" ColumnName="Telefoni" />
+                <ScalarProperty Name="DataRegjistrimit" ColumnName="DataRegjistrimit" />
+                <ScalarProperty Name="Datelindja" ColumnName="Datelindja" />
+                <ScalarProperty Name="Mbiemri" ColumnName="Mbiemri" />
+                <ScalarProperty Name="Emri" ColumnName="Emri" />
+                <ScalarProperty Name="KomunaID" ColumnName="KomunaID" />
+                <ScalarProperty Name="DepartamentiID" ColumnName="DepartamentiID" />
+                <ScalarProperty Name="RoliID" ColumnName="RoliID" />
+                <ScalarProperty Name="PerdoruesiID" ColumnName="PerdoruesiID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblProfesori">
+            <EntityTypeMapping TypeName="FakultetiModel.tblProfesori">
+              <MappingFragment StoreEntitySet="tblProfesori">
+                <ScalarProperty Name="Titulli" ColumnName="Titulli" />
+                <ScalarProperty Name="Mbiemri" ColumnName="Mbiemri" />
+                <ScalarProperty Name="Emri" ColumnName="Emri" />
+                <ScalarProperty Name="ProfesoriID" ColumnName="ProfesoriID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblProfesoriLenda">
+            <EntityTypeMapping TypeName="FakultetiModel.tblProfesoriLenda">
+              <MappingFragment StoreEntitySet="tblProfesoriLenda">
+                <ScalarProperty Name="LendaID" ColumnName="LendaID" />
+                <ScalarProperty Name="ProfesoriID" ColumnName="ProfesoriID" />
+                <ScalarProperty Name="ProfesoriLendaID" ColumnName="ProfesoriLendaID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblRoli">
+            <EntityTypeMapping TypeName="FakultetiModel.tblRoli">
+              <MappingFragment StoreEntitySet="tblRoli">
+                <ScalarProperty Name="Aktiv" ColumnName="Aktiv" />
+                <ScalarProperty Name="RoliPershkrimi" ColumnName="RoliPershkrimi" />
+                <ScalarProperty Name="RoliID" ColumnName="RoliID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblStudenti">
+            <EntityTypeMapping TypeName="FakultetiModel.tblStudenti">
+              <MappingFragment StoreEntitySet="tblStudenti">
+                <ScalarProperty Name="KomunaID" ColumnName="KomunaID" />
+                <ScalarProperty Name="VitiStudimeve" ColumnName="VitiStudimeve" />
+                <ScalarProperty Name="Datelindja" ColumnName="Datelindja" />
+                <ScalarProperty Name="Mbiemri" ColumnName="Mbiemri" />
+                <ScalarProperty Name="Emri" ColumnName="Emri" />
+                <ScalarProperty Name="StudentiID" ColumnName="StudentiID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblStudentiLenda">
+            <EntityTypeMapping TypeName="FakultetiModel.tblStudentiLenda">
+              <MappingFragment StoreEntitySet="tblStudentiLenda">
+                <ScalarProperty Name="ProfesoriLendaID" ColumnName="ProfesoriLendaID" />
+                <ScalarProperty Name="StudentiID" ColumnName="StudentiID" />
+                <ScalarProperty Name="StudentiLendaID" ColumnName="StudentiLendaID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblViti">
+            <EntityTypeMapping TypeName="FakultetiModel.tblViti">
+              <MappingFragment StoreEntitySet="tblViti">
+                <ScalarProperty Name="Viti" ColumnName="Viti" />
+                <ScalarProperty Name="VitiID" ColumnName="VitiID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

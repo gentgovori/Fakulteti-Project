@@ -1,0 +1,58 @@
+﻿@model Fakulteti.Models.ProfesoriLista
+@using (Html.BeginForm("ModifikoProfesorinPost", "Profesoret", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-4">
+            @Html.HiddenFor(model => model.ProfesoriID)
+            <b>Emri</b><br />
+            @Html.TextBoxFor(item => item.Emri, new { @class = "form-control", @Placeholder = "Emri" })
+        </div>
+        <div class="col-md-4">
+            <b>Mbiemri</b><br />
+            @Html.TextBoxFor(item => item.Mbiemri, new { @class = "form-control", @Placeholder = "Mbiemri" })
+        </div>
+        <div class="col-md-4">
+            <b>Datelindja</b><br />
+            @Html.TextBoxFor(item => item.Datelindja, new { @class = "form-control", @Placeholder = "Datelindja" })
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <b>Telefoni</b><br />
+            @Html.TextBoxFor(item => item.Telefoni, new { @class = "form-control", @Placeholder = "Telefoni" })
+        </div>
+        <div class="col-md-4">
+            <b>Perdoruesi</b><br />
+            @Html.TextBoxFor(item => item.Perdoruesi, new { @class = "form-control", @Placeholder = "Përdoruesi" })
+        </div>
+        <div class="col-md-4">
+            <b>Fjalekalimi</b><br />
+            @Html.TextBoxFor(item => item.Fjalekalimi, new { @class = "form-control", @Placeholder = "Fjalekalimi" })
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <b>Komuna</b><br />
+            @Html.DropDownListFor(item => item.KomunaID, ViewBag.Komunat as SelectList, "Zgjedh", new { @class = "form-control" })
+        </div>
+        <div class="col-md-4">
+            <b>Departamenti</b><br />
+            @Html.DropDownListFor(item => item.DepartamentiID, ViewBag.Departamentet as SelectList, "Zgjedh", new { @class = "form-control" })
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-4">
+            <input type="submit" class="btn btn-primary" style="width:100%" value="Ruaj" />
+        </div>
+    </div>
+
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+

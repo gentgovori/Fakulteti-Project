@@ -1,0 +1,15 @@
+﻿
+@using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+{
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a style="color:white;font-weight:bold" href="@Url.Action("Index","Home",new { check=1})">
+               Largohu <img src="~/Images/logout.png" style="width:20px;height:20px" />  
+            </a>
+        </li>
+
+    </ul>
+}
+

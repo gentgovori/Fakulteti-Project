@@ -1,0 +1,30 @@
+﻿@model Fakulteti.Models.RegjistroLenden  
+@using (Html.BeginForm("RegjistroLendenPost", "Lenda", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-6">
+            <b>Lenda</b><br />
+            @Html.TextBoxFor(item => item.Emri, new { @class = "form-control", @Placeholder = "Emri" })
+        </div>
+        <div class="col-md-6">
+            <b>Pershkrimi</b><br />
+            @Html.TextBoxFor(item => item.Pershkrimi, new { @class = "form-control", @Placeholder = "Pershkrimi" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <b>Profesori</b><br />
+            @Html.DropDownListFor(item => item.PerdoruesiID, ViewBag.Profesoret as SelectList, "Zgjedh", new { @class = "form-control" })
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-4">
+            <input type="submit" class="btn btn-primary" style="width:100%" value="Ruaj" />
+        </div>
+    </div>
+
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>

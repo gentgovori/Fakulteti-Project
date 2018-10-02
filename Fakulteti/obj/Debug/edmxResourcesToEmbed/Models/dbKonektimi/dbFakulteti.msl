@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FakultetiModelStoreContainer" CdmEntityContainer="FakultetiEntities1">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="FakultetiModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAfati">
+      <EntityTypeMapping TypeName="FakultetiModel.tblAfati">
+        <MappingFragment StoreEntitySet="tblAfati">
+          <ScalarProperty Name="NumriProvimeve" ColumnName="NumriProvimeve" />
+          <ScalarProperty Name="Aktiv" ColumnName="Aktiv" />
+          <ScalarProperty Name="DataMbarimit" ColumnName="DataMbarimit" />
+          <ScalarProperty Name="DataFillimit" ColumnName="DataFillimit" />
+          <ScalarProperty Name="Afati" ColumnName="Afati" />
+          <ScalarProperty Name="AfatiID" ColumnName="AfatiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDepartamenti">
+      <EntityTypeMapping TypeName="FakultetiModel.tblDepartamenti">
+        <MappingFragment StoreEntitySet="tblDepartamenti">
+          <ScalarProperty Name="Departamenti" ColumnName="Departamenti" />
+          <ScalarProperty Name="DepartamentiID" ColumnName="DepartamentiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblKlasa">
+      <EntityTypeMapping TypeName="FakultetiModel.tblKlasa">
+        <MappingFragment StoreEntitySet="tblKlasa">
+          <ScalarProperty Name="Numri" ColumnName="Numri" />
+          <ScalarProperty Name="KlasaID" ColumnName="KlasaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblKomuna">
+      <EntityTypeMapping TypeName="FakultetiModel.tblKomuna">
+        <MappingFragment StoreEntitySet="tblKomuna">
+          <ScalarProperty Name="Qyteti" ColumnName="Qyteti" />
+          <ScalarProperty Name="Komua" ColumnName="Komua" />
+          <ScalarProperty Name="KomunaID" ColumnName="KomunaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLenda">
+      <EntityTypeMapping TypeName="FakultetiModel.tblLenda">
+        <MappingFragment StoreEntitySet="tblLenda">
+          <ScalarProperty Name="Pershkrimi" ColumnName="Pershkrimi" />
+          <ScalarProperty Name="Emri" ColumnName="Emri" />
+          <ScalarProperty Name="LendaID" ColumnName="LendaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLendaKlasa">
+      <EntityTypeMapping TypeName="FakultetiModel.tblLendaKlasa">
+        <MappingFragment StoreEntitySet="tblLendaKlasa">
+          <ScalarProperty Name="Koha" ColumnName="Koha" />
+          <ScalarProperty Name="KlasaID" ColumnName="KlasaID" />
+          <ScalarProperty Name="LendaID" ColumnName="LendaID" />
+          <ScalarProperty Name="LendaKlasaID" ColumnName="LendaKlasaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblParaqitjaProvimeve">
+      <EntityTypeMapping TypeName="FakultetiModel.tblParaqitjaProvimeve">
+        <MappingFragment StoreEntitySet="tblParaqitjaProvimeve">
+          <ScalarProperty Name="Nota" ColumnName="Nota" />
+          <ScalarProperty Name="VitiID" ColumnName="VitiID" />
+          <ScalarProperty Name="AfatiID" ColumnName="AfatiID" />
+          <ScalarProperty Name="ProfesoriLendaID" ColumnName="ProfesoriLendaID" />
+          <ScalarProperty Name="PerdoruesiID" ColumnName="PerdoruesiID" />
+          <ScalarProperty Name="ParaqitjaProvimeveID" ColumnName="ParaqitjaProvimeveID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPerdoruesi">
+      <EntityTypeMapping TypeName="FakultetiModel.tblPerdoruesi">
+        <MappingFragment StoreEntitySet="tblPerdoruesi">
+          <ScalarProperty Name="Aktiv" ColumnName="Aktiv" />
+          <ScalarProperty Name="Salt" ColumnName="Salt" />
+          <ScalarProperty Name="Fjalekalimi" ColumnName="Fjalekalimi" />
+          <ScalarProperty Name="Perdoruesi" ColumnName="Perdoruesi" />
+          <ScalarProperty Name="Telefoni" ColumnName="Telefoni" />
+          <ScalarProperty Name="DataRegjistrimit" ColumnName="DataRegjistrimit" />
+          <ScalarProperty Name="Datelindja" ColumnName="Datelindja" />
+          <ScalarProperty Name="Mbiemri" ColumnName="Mbiemri" />
+          <ScalarProperty Name="Emri" ColumnName="Emri" />
+          <ScalarProperty Name="KomunaID" ColumnName="KomunaID" />
+          <ScalarProperty Name="DepartamentiID" ColumnName="DepartamentiID" />
+          <ScalarProperty Name="RoliID" ColumnName="RoliID" />
+          <ScalarProperty Name="PerdoruesiID" ColumnName="PerdoruesiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblProfesori">
+      <EntityTypeMapping TypeName="FakultetiModel.tblProfesori">
+        <MappingFragment StoreEntitySet="tblProfesori">
+          <ScalarProperty Name="Titulli" ColumnName="Titulli" />
+          <ScalarProperty Name="Mbiemri" ColumnName="Mbiemri" />
+          <ScalarProperty Name="Emri" ColumnName="Emri" />
+          <ScalarProperty Name="ProfesoriID" ColumnName="ProfesoriID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblProfesoriLenda">
+      <EntityTypeMapping TypeName="FakultetiModel.tblProfesoriLenda">
+        <MappingFragment StoreEntitySet="tblProfesoriLenda">
+          <ScalarProperty Name="LendaID" ColumnName="LendaID" />
+          <ScalarProperty Name="ProfesoriID" ColumnName="ProfesoriID" />
+          <ScalarProperty Name="ProfesoriLendaID" ColumnName="ProfesoriLendaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRoli">
+      <EntityTypeMapping TypeName="FakultetiModel.tblRoli">
+        <MappingFragment StoreEntitySet="tblRoli">
+          <ScalarProperty Name="Aktiv" ColumnName="Aktiv" />
+          <ScalarProperty Name="RoliPershkrimi" ColumnName="RoliPershkrimi" />
+          <ScalarProperty Name="RoliID" ColumnName="RoliID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStudenti">
+      <EntityTypeMapping TypeName="FakultetiModel.tblStudenti">
+        <MappingFragment StoreEntitySet="tblStudenti">
+          <ScalarProperty Name="KomunaID" ColumnName="KomunaID" />
+          <ScalarProperty Name="VitiStudimeve" ColumnName="VitiStudimeve" />
+          <ScalarProperty Name="Datelindja" ColumnName="Datelindja" />
+          <ScalarProperty Name="Mbiemri" ColumnName="Mbiemri" />
+          <ScalarProperty Name="Emri" ColumnName="Emri" />
+          <ScalarProperty Name="StudentiID" ColumnName="StudentiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStudentiLenda">
+      <EntityTypeMapping TypeName="FakultetiModel.tblStudentiLenda">
+        <MappingFragment StoreEntitySet="tblStudentiLenda">
+          <ScalarProperty Name="ProfesoriLendaID" ColumnName="ProfesoriLendaID" />
+          <ScalarProperty Name="StudentiID" ColumnName="StudentiID" />
+          <ScalarProperty Name="StudentiLendaID" ColumnName="StudentiLendaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblViti">
+      <EntityTypeMapping TypeName="FakultetiModel.tblViti">
+        <MappingFragment StoreEntitySet="tblViti">
+          <ScalarProperty Name="Viti" ColumnName="Viti" />
+          <ScalarProperty Name="VitiID" ColumnName="VitiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

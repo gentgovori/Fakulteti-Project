@@ -1,0 +1,138 @@
+﻿@using Fakulteti.Models.Afatet
+@model IEnumerable<AfatiLista>
+@{
+    ViewBag.Title = "Index";
+}
+
+<br />
+<br />
+<br />
+<br />
+<p style="font-weight:bold; font-size:18px">@ViewBag.Mesazhi</p>
+<div style="padding:20px;border:1px solid lightgrey;box-shadow:2px 2px 2px grey">
+    <div class="row">
+        <div class="col-md-2">
+            <button type="button" id="RegjistroAfatinGet" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRegjistrimi" onclick="RegjistroAfatin()" style="width:100%"><i class="fa fa-plus-circle" style="font-size:1.3em"></i>&nbsp;Regjistro</button>
+        </div>
+        <div class="col-md-10">
+
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="table table-responsive">
+        <table id="myTable" class="table text-center table-hover">
+
+            <thead>
+                <tr>
+                    <th style="text-align:left">
+                        Afati
+                    </th>
+                    <th style="text-align:left">
+                        Data e fillimit
+                    </th>
+                    <th style="text-align:left">
+                        Data e mbarimit
+                    </th>
+                    <th style="text-align:left">
+                        Aktiv
+                    </th>
+                    <th style="text-align:center">
+                        Numri i provimeve
+                    </th>
+                    <th style="text-align:left">
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+            {
+                    <tr>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Afati)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.DataFillimit)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.DataMbarimit)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Aktiv)
+                        </td>
+                        <td style="text-align:center">
+                            @Html.DisplayFor(modelItem => item.NumriProvimeve)
+                        </td>
+                        <td style="text-align:center">
+                            <button type="button" id="ModifikoAfatinGet" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalModifikimi" onclick="ModifikoStudentin(@item.AfatiID)" style="width:100%"><i class="fa fa-plus-circle" style="font-size:1.3em"></i>&nbsp;Modifiko</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal fade" id="modalRegjistrimi" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4>
+                        <span style="display:inline-block">
+                            <i class="fa fa-edit fa-2x"></i>
+                            &nbsp; &nbsp;
+
+                        </span>Regjistrimi i afatit
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="moduliRegjistrimi">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default btn-default pull-right btn-sm" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Anulo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalModifikimi" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4>
+                        <span style="display:inline-block">
+                            <i class="fa fa-edit fa-2x"></i>
+                            &nbsp; &nbsp;
+
+                        </span>Modifikimi i studentit
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="moduliModifikimi">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default btn-default pull-right btn-sm" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Anulo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    function RegjistroAfatin()
+    {
+        $("#moduliRegjistrimi").load('@Url.Action("RegjistroAfatinGet")')
+    }
+    function ModifikoStudentin(AfatiID) {
+        $("#moduliModifikimi").load('@Url.Action("ModifikoAfatinGet")', {AfatiID:AfatiID})
+    }
+</script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />

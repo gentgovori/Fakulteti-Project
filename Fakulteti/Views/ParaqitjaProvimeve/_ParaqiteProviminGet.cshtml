@@ -1,0 +1,28 @@
+﻿@model Fakulteti.Models.ParaqitjaProvimeveModel.ParaqitjaProvimeve
+@using (Html.BeginForm("ParaqiteProviminPost", "ParaqitjaProvimeve", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-4">
+            <b>Lenda</b><br />
+            @Html.DropDownListFor(item => item.ProfesoriLendaID, ViewBag.Lenda as SelectList, "Zgjedh", new { @class = "form-control" })
+        </div>
+        <div class="col-md-4">
+            <b>Afati</b><br />
+            @Html.DropDownListFor(item => item.AfatiID, ViewBag.Afati as SelectList, "Zgjedh", new { @class = "form-control", @style = "max-width:100%" })
+        </div>
+        <div class="col-md-4">
+            <b>Viti</b><br />
+            @Html.DropDownListFor(item => item.VitiID, ViewBag.Viti as SelectList, "Zgjedh", new { @class = "form-control", @style = "max-width:100%" })
+        </div>
+    </div>
+        <br />
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <input type="submit" class="btn btn-primary" style="width:100%" value="Ruaj" />
+            </div>
+        </div>
+
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>

@@ -1,0 +1,26 @@
+﻿@model Fakulteti.Helpers.Alert
+@{
+    var alerts = TempData.ContainsKey(Fakulteti.Helpers.Alert.TempDataKey)
+                ? (List<Fakulteti.Helpers.Alert>)TempData[Fakulteti.Helpers.Alert.TempDataKey]
+                : new List<Fakulteti.Helpers.Alert>();
+
+    if (alerts.Any())
+    {
+
+    }
+
+    foreach (var alert in alerts)
+    {
+        var dismissableClass = alert.Dismissable ? "alert-dismissable" : null;
+        <div class="alert alert-@alert.AlertStyle @dismissableClass">
+            @if (alert.Dismissable)
+            {
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            }
+            @Html.Raw(alert.Message)
+        </div>
+    }
+}
+
+
+

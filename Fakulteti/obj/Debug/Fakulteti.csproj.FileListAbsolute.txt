@@ -1,0 +1,386 @@
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\csc.exe
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\vbc.exe
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\VBCSCompiler.exe
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Fakulteti.dll.config
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Fakulteti.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Fakulteti.pdb
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Antlr3.Runtime.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\EntityFramework.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\EntityFramework.SqlServer.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Newtonsoft.Json.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Owin.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Helpers.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Mvc.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Optimization.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Razor.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.Razor.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\WebGrease.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Helpers.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Mvc.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Optimization.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Razor.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.Razor.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Antlr3.Runtime.pdb
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Newtonsoft.Json.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\EntityFramework.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\EntityFramework.SqlServer.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\obj\Debug\Fakulteti.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\obj\Debug\Fakulteti.pdb
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\obj\Debug\Fakulteti.csprojResolveAssemblyReference.cache
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\csc.exe
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\vbc.exe
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Fakulteti.dll.config
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Fakulteti.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Fakulteti.pdb
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Antlr3.Runtime.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\EntityFramework.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\EntityFramework.SqlServer.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Newtonsoft.Json.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Owin.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Helpers.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Mvc.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Optimization.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Razor.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\WebGrease.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Helpers.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Mvc.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Optimization.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.Razor.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Antlr3.Runtime.pdb
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Newtonsoft.Json.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\EntityFramework.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\EntityFramework.SqlServer.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\obj\Debug\Fakulteti.csprojResolveAssemblyReference.cache
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\obj\Debug\Fakulteti.dll
+C:\Users\Ylli\Documents\visual studio 2015\Projects\Fakulteti\Fakulteti\obj\Debug\Fakulteti.pdb
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\obj\Debug\Fakulteti.csprojResolveAssemblyReference.cache
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\obj\Debug\RdlCompile.cache
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\obj\Debug\RdlCompile.compiled
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\obj\Debug\Fakulteti.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\obj\Debug\Fakulteti.pdb
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\csc.exe
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\vbc.exe
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\VBCSCompiler.exe
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Fakulteti.dll.config
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Fakulteti.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Fakulteti.pdb
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Antlr3.Runtime.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\EntityFramework.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\EntityFramework.SqlServer.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\FastMember.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\GenCode128.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Newtonsoft.Json.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Owin.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.Helpers.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.Mvc.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.Optimization.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.Razor.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.WebPages.Deployment.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.WebPages.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.WebPages.Razor.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\WebGrease.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.SqlServer.Types.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.Helpers.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.Mvc.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.Optimization.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.Razor.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.WebPages.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.WebPages.Deployment.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\System.Web.WebPages.Razor.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Antlr3.Runtime.pdb
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Newtonsoft.Json.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\EntityFramework.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\EntityFramework.SqlServer.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\vixhilent.bajrami\Desktop\Fakulteti\Fakulteti\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\obj\Debug\RdlCompile.cache
+C:\Users\Erjon\documents\visual studio 2015\Projects\Fakulteti\Fakulteti\obj\Debug\RdlCompile.compiled
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\obj\Debug\Fakulteti.csprojResolveAssemblyReference.cache
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\obj\Debug\Fakulteti.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\obj\Debug\Fakulteti.pdb
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\csc.exe
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\vbc.exe
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\VBCSCompiler.exe
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Fakulteti.dll.config
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Fakulteti.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Fakulteti.pdb
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Antlr3.Runtime.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\EntityFramework.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\EntityFramework.SqlServer.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Newtonsoft.Json.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Owin.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Helpers.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Mvc.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Optimization.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Razor.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.Deployment.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.Razor.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\WebGrease.dll
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Helpers.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Mvc.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Optimization.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Razor.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.Deployment.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.Razor.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Antlr3.Runtime.pdb
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Newtonsoft.Json.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\EntityFramework.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\EntityFramework.SqlServer.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\fesst\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\csc.exe
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\vbc.exe
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\VBCSCompiler.exe
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Fakulteti.dll.config
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Fakulteti.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Fakulteti.pdb
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Antlr3.Runtime.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\EntityFramework.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\EntityFramework.SqlServer.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Newtonsoft.Json.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Owin.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Helpers.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Mvc.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Optimization.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Razor.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.Razor.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\WebGrease.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Helpers.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Mvc.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Optimization.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.Razor.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\System.Web.WebPages.Razor.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Antlr3.Runtime.pdb
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Newtonsoft.Json.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\EntityFramework.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\EntityFramework.SqlServer.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\obj\Debug\Fakulteti.csprojResolveAssemblyReference.cache
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\obj\Debug\Fakulteti.dll
+C:\Users\Gent\Desktop\Fakulteti\Fakulteti\Fakulteti\obj\Debug\Fakulteti.pdb

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="~/Content/MultiSelect/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+    <link href="~/Content/MultiSelect/select2.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="row"  style="padding:20px">
+        @RenderBody()
+    </div>
+
+    
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <script src="~/Content/MultiSelect/select2.js"></script>
+</body>
+</html>
+
+

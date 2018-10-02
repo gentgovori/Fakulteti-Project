@@ -1,0 +1,96 @@
+﻿@using Fakulteti.Models.Notat
+@model IEnumerable<ParaqitjaProvimeveNota>
+@{
+    ViewBag.Title = "Index";
+}
+<br />
+<br />
+<br />
+<br />
+@if (ViewBag.Check == "1")
+{
+    <p style="font-weight:bold; font-size:18px;color:green">@ViewBag.Mesazhi</p>
+}
+else if (ViewBag.Check == "2")
+{
+    <p style="font-weight:bold; font-size:18px;color:#1532be">@ViewBag.Mesazhi</p>
+}
+else if (ViewBag.Check == "3")
+{
+    <p style="font-weight:bold; font-size:18px;color:red">@ViewBag.Mesazhi</p>
+}
+else
+{
+    <p style="font-weight:bold; font-size:18px;color:green">@ViewBag.Mesazhi</p>
+}
+<br />
+
+<div style="padding:20px;border:1px solid lightgrey;box-shadow:2px 2px 2px grey">
+
+    <div class="row">
+        <div class="col-md-4">
+            <a style="width:50%" class="btn btn-danger btn-sm" href="@Url.Action("KartelaStudentit","Transkripta")" target="_blank">
+                Kartela e studentit
+            </a>
+        </div>
+    </div><br /><br />
+    <div class="table table-responsive">
+        <table id="myTable" class="table text-center table-hover">
+
+            <thead>
+                <tr>
+                    <th style="text-align:left">
+                        Profesori
+                    </th>
+                    <th style="text-align:left">
+                        Lenda
+                    </th>
+                    <th style="text-align:left">
+                        Afati
+                    </th>
+                    <th style="text-align:left">
+                        Viti
+                    </th>
+                    <th style="text-align:left">
+                        Nota
+                    </th>
+                    <th style="text-align:left">
+                        Statusi
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+            {
+                    <tr>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Profesori)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Lenda)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Afati)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Viti)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Nota)
+                        </td>
+                        <td style="text-align:left">
+                            @Html.DisplayFor(modelItem => item.Statusi)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+</div>
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />

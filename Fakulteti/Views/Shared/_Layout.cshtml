@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+   
+    @Styles.Render("~/Content/css")
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#920709">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("eFakulteti", "Index", "Home", new { area = "" }, new { @class = "navbar-brand",@style="color:white" })
+            </div>
+            <div class="navbar-collapse collapse">
+                @if (ViewBag.RoliID == 1)
+                {
+
+                }
+                else if (ViewBag.RoliID == 2)
+                {
+                    //referent
+                    <ul class="nav navbar-nav">
+                        <li style="color:white">@Html.ActionLink("Studentet", "Index", "Studentet", null, new { @style="color:white" })</li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li style="color:white">@Html.ActionLink("Profesoret", "Index", "Profesoret", null, new { @style = "color:white" })</li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li style="color:white">@Html.ActionLink("Lendet", "Index", "Lenda", null, new { @style = "color:white" })</li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li style="color:white">@Html.ActionLink("Afatet", "Index", "Afatet", null, new { @style = "color:white" })</li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li style="color:white">@Html.ActionLink("Sallat", "Index", "Salla", null, new { @style = "color:white" })</li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li style="color:white">@Html.ActionLink("Departamenti", "Index", "Departamenti", null, new { @style = "color:white" })</li>
+                    </ul>
+                }
+                else if (ViewBag.RoliID == 3)
+                {
+                    <ul class="nav navbar-nav">
+                        <li style="color:white">@Html.ActionLink("Vendosi notat", "Index", "VendosNotat", null, new { @style = "color:white" })</li>
+                    </ul>
+                }
+                else if (ViewBag.RoliID == 4)
+                {
+                    <ul class="nav navbar-nav">
+                        <li style="color:white">@Html.ActionLink("Regjistro lendet", "Index", "RegjistroLendet", null, new { @style = "color:white" })</li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li style="color:white">@Html.ActionLink("Paraqitja e provimeve", "Index", "ParaqitjaProvimeve", null, new { @style = "color:white" })</li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li style="color:white">@Html.ActionLink("Lista e rezultateve", "ListaRezultateve", "Transkripta", null, new { @style = "color:white" })</li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li style="color:white">@Html.ActionLink("Transkripta e notave", "Index", "Transkripta", null, new { @style = "color:white" })</li>
+                    </ul>
+                   
+                }
+
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+
+</body>
+
+
+
+</html>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#myTable').DataTable({
+            "processing": true,
+            responsive: true,
+            "ordering": false,
+            autoFill: true,
+            language: {
+
+                "sEmptyTable": "Nuk ka te dhena",
+                "sInfo": "Duke treguar _START_ deri _END_ prej _TOTAL_ rreshtave.",
+                "sInfoEmpty": "Duke treguar 0 deri 0 prej 0 rreshtave.",
+                "sInfoFiltered": "(të filtruara nga gjithësej _MAX_  reshtave).",
+                "sInfoPostFix": "",
+                "sInfoThousands": ",",
+                "sLengthMenu": "Shiko _MENU_ rreshta",
+                "sLoadingRecords": "Duke u ngarkuar....",
+                "sProcessing": "Duke u perpunuar....",
+                "sSearch": "Kerkoni: ",
+                "sZeroRecords": "Asnjë e dhënë nuk u gjet.",
+                "oPaginate": {
+                    "sFirst": "I pari",
+                    "sLast": "I fundit",
+                    "sNext": "I radhes",
+                    "sPrevious": "Paraprak"
+                },
+                "oAria": {
+                    "sSortAscending": ": Aktivizo për të sortuar kolumnin me vlera në ngritje.",
+                    "sSortDescending": ": Aktivizo për të sortuar kolumnin me vlera në zbritje."
+                }
+            }
+        });
+    });
+</script>
